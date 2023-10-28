@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theseus Indoor Navigation</title>
+    <link rel="stylesheet" href="css/theseus.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+	<meta name="author" content = "Roman">
+	<meta name="description" content = "Theseus Indoor Navigation">
+	<meta name="keywords" content = "Indoor Navigation">
+	<meta name="copyright" content = "Golden Bears 2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/getStarted.js"></script>
+</head>
+    <body>
+        <nav>
+		    <ul class = "navul">
+                <li class = "navli"><a class="nav" href="theseus.html">Home</a></li>
+                <li class = "navli"><a class="nav" href="getStarted.html">Get Started</a></li>
+                <li class = "navli"><a class="nav" href="landmark.html">Find a Landmark</a></li>
+                <li class = "navli"><a class="nav" href="feature.html">Find a Feature</a></li>
+            </ul>
+        </nav>
+        <center>
+            <br>
+            <br>
+            <img src="images/logo.png">
+            <br>
+            <header class="fancyheader">Theseus</header>
+            <br>
+            <header>Indoor navigation made simple</header>
+        </center>
+        <br>
+        <div class='typetwo'>
+	        <!-- first div on the page, contains information about job overview -->
+            <div class="collegediv">
+            <center>
+	            <h1 class="blackheader">Get Started</h1>
+            </center>
+            <p> 
+                <div class="dropdown">
+                    <button class="dropbtn">Choose a Campus Building v</button>
+                    <div class="dropdown-content">
+                      <button onclick="updateImage('union')" class="listbutton">Ohio Union</button>
+                      <button onclick="updateImage('thompson')" class="listbutton">Thompson Library</button>
+                      <button onclick="updateImage('rpac')" class="listbutton">RPAC</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <center>
+                    <img class="gsimg" id="image">
+                </center>
+	        </p>
+            </div>
+        </div>
+    </body>
+</html>
