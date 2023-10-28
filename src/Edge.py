@@ -1,2 +1,2 @@
 class Edge():
-        pass
+    pass
