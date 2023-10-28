@@ -4,3 +4,6 @@ class Feature:
         self.id = id
         self.imgPath = imgPath
 
+    def __eq__(self, other):
+        return (self.name == other.name)
+
