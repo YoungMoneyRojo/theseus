@@ -7,3 +7,11 @@ function updateImage(name) {
         document.getElementById("image").src = "images/rpac.jpg"
     }
 }
+
+function updateStartBox(input) {
+    document.getElementById("from").value = input
+}
+
+function updateDestinationBox(input) {
+    document.getElementById("to").value = input
+}
