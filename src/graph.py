@@ -48,6 +48,13 @@ class IndoorNav:
                 answer.append(edge.lm)
         return answer
     
+    def find_node_by_name(self, name):
+        result = None
+        for node in self.nodes:
+            if(node.name == name):
+                resule = node
+        return result
+    
     # def helper(self, en: Feature, answer: list[list(Feature)]):
     #     for x in answer:
     #         next_steps = self.search(x)
@@ -56,8 +63,8 @@ class IndoorNav:
         
 
 
-    def print_path(path:list[Feature]):
-        result = "START"
+    def print_path(self, path:list[Feature]):
+        result = " START"
         
         for i in range(len(path)-1):
             result += "\n Go From " + path[i].name + " to " + path[i+1].name

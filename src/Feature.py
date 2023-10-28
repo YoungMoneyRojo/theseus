@@ -1,5 +1,5 @@
 class Feature:
-    def __init__(self, name, id, imgPath: str):
+    def __init__(self, name, id=1, imgPath=""):
         self.name = name
         self.id = id
         self.imgPath = imgPath
