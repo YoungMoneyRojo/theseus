@@ -74,14 +74,15 @@ graph.add_edge(e18)
 
 @app.route('/', methods=['GET', 'POST'])
 def homepage():
+    path = ""
     if request.method == 'POST':
 
         if request.form.get('submit') == 'Submit':
             path = graph.find_shortest_path(graph.find_node_by_name(request.form.get("from")), graph.find_node_by_name(request.form.get("to")))
             
-            render_template('getStarted.html', instructions = graph.print_path(path))
+            return render_template('getStarted.html', instructions = graph.print_path(path))
             pass
-
+    return render_template('getStarted.html', instructions = graph.print_path(path))
 
 
 if __name__ == '__main__':
